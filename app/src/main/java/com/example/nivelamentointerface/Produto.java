@@ -22,23 +22,15 @@ public class Produto implements iSCCP {
         this.nome = nome;
     }
 
+
     @Override
-    public void incluir() {
-        Log.i(API.TAG, "incluir: Produto ");
+    public void procurar() {
+
     }
 
     @Override
-    public void alternar() {
-        Log.i(API.TAG, "alternar: Produto ");
+    public void apagar() {
+        Log.i(API.TAG, "apagar: Produto ");
     }
 
-    @Override
-    public void deletar() {
-        Log.i(API.TAG, "deletar: Produto ");
-    }
-
-    @Override
-    public void listar() {
-        Log.i(API.TAG, "listar   : Produto ");
-    }
 }

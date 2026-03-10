@@ -26,22 +26,14 @@ public class Cliente implements iSCCP {
     }
 
     @Override
-    public void incluir() {
-        Log.i(API.TAG, "incluir: Cliente ");
+    public void procurar() {
+        Log.i(API.TAG, "procurar: Cliente ");
     }
 
     @Override
-    public void alternar() {
-        Log.i(API.TAG, "alternar: Cliente ");
+    public void apagar() {
+
     }
 
-    @Override
-    public void deletar() {
-        Log.i(API.TAG, "deletar: Cliente ");
-    }
 
-    @Override
-    public void listar() {
-        Log.i(API.TAG, "listar: Cliente ");
-    }
 }

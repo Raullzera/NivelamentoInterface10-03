@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Cliente cliente;
+    Produto produto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +20,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         cliente = new Cliente();
-        cliente.setNome("Vocaro");
-        cliente.setEmail("vocarolenda@gmail.com");
-        cliente.incluir();
+        cliente.setNome("Raul");
+        cliente.setEmail("raulluis@gmail.com");
+        cliente.procurar();
+
+        produto = new Produto();
+        produto.setNome("Timão");
+        produto.setFornecedor("Brasil");
+        produto.apagar();
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
